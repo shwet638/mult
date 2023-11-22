@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -26,7 +26,11 @@ input b,
 output Cout,
 output Sum
     );
-    
- assign Sum=a^b;
- assign Cout=a&b;
+
+    wire [1:0] temp;
+    assign temp=a+b;
+    assign Sum=temp[0];
+    assign Cout=temp[1];
+//  assign Sum=a^b;
+//  assign Cout=a&b;
 endmodule

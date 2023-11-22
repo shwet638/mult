@@ -27,6 +27,13 @@ input Cin,
 output Cout,
 output Y
     );
- assign Y=A^B^Cin;
- assign Cout=(A^B)&Cin | A&B;
+
+wire [1:0] temp;
+assign temp=A+B+Cin;
+assign Y=temp[0];
+assign Cout=temp[1];
+
+
+//  assign Y=A^B^Cin;
+//  assign Cout=(A^B)&Cin | A&B;
 endmodule
