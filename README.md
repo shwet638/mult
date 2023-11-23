@@ -10,7 +10,7 @@ This Git project contains three designs for 8-bit multiplication, each producing
 - **Logic Elements:** 175
 - **Frequency:** 128MHz
 
-#### Instantiations
+#### Multiple Instantiations
 
 | #Multipliers | Logic Elements  |  BRAMs | Frequency |
 |--------------|-----------------|-------|-----------|
@@ -25,7 +25,7 @@ This Git project contains three designs for 8-bit multiplication, each producing
 - **Logic Elements:** 180
 - **Frequency:** 179.5MHz
 
-#### Instantiations
+#### Multiple Instantiations
 
 | #Multipliers | Logic Elements | BRAMs | Frequency |
 |--------------|----------------|-------|-----------|
@@ -40,7 +40,7 @@ This Git project contains three designs for 8-bit multiplication, each producing
 - **Logic Elements:** 161
 - **Frequency:** 106MHz
 
-#### Instantiations
+#### Multiple Instantiations
 
 | #Multipliers | Inputs | BRAMs | Frequency |
 |--------------|--------|-------|-----------|
@@ -59,8 +59,6 @@ This Git project contains three designs for 8-bit multiplication, each producing
 
 The top module for each design is named "top.v".
 
-## Usage
+## These multipliers are tested on efinix Trion120F324 Fpga,
+The dada_multiplier has been implemented on systolic array.
 
-To use any of the designs, navigate to the respective design directory and refer to the "top.v" module.
-
-Feel free to explore, modify, and integrate these designs into your project!
