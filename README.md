@@ -1,6 +1,6 @@
 # 8-Bit Multiplication Designs
 
-This Git project contains three designs for 8-bit multiplication, each producing a 16-bit output. The designs are implemented using different multipliers and have varying resource utilization and operating frequencies.
+This Git project contains four designs for 8-bit multiplication, each producing a 16-bit output. The designs are implemented using different multipliers and have varying resource utilization and operating frequencies.
 
 ## Designs
 
@@ -55,10 +55,22 @@ This Git project contains three designs for 8-bit multiplication, each producing
 - **Logic Elements:** 185
 - **Frequency:** 143MHz
 
+
+### 5. Booth's Modified Algorithm
+| Feature                    | Specification                       |
+|----------------------------|-------------------------------------|
+| Algorithm                  | Modified Booth's algorithm           |
+| Clock Frequency            | 191MHz                              |
+| Logic Elements             | 181                                 |
+| Computation Time           | Single clock cycle                  |
+
+  
+
 ### Top Module
 
 The top module for each design is named "top.v".
 
 ## These multipliers are tested on efinix Trion120F324 Fpga,
-The dada_multiplier has been implemented on systolic array.
+
+
 
