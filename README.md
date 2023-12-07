@@ -60,8 +60,8 @@ This Git project contains four designs for 8-bit multiplication, each producing 
 | Feature                    | Specification                       |
 |----------------------------|-------------------------------------|
 | Algorithm                  | Modified Booth's algorithm           |
-| Clock Frequency            | 191MHz                              |
-| Logic Elements             | 181                                 |
+| Clock Frequency            | 195MHz                              |
+| Logic Elements             | 198                                 |
 | Computation Time           | Single clock cycle                  |
 
   
