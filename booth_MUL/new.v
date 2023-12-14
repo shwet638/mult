@@ -2,10 +2,10 @@ module new(input  [2:0] opr,
 	input [1:0] extend_one,
 	input clk,
 	input signed [7:0] b,
-	output reg   [14:0] pp);
+	output reg   [15:0] pp);
 
 wire is_neg;
-reg signed [8:0]r_pp;
+reg signed [9:0]r_pp;
 reg [1:0] r_ext;
 wire is_shifted;
 reg d=0;
@@ -59,9 +59,9 @@ begin
         endcase
     case(r_ext) 
    
-	2'b00:pp<={{6{r_pp[8]}},r_pp};
-	2'b01:pp<={{4{r_pp[8]}},r_pp,{2{1'b0}}};
-	2'b10:pp<={{2{r_pp[8]}},r_pp,{4{1'b0}}};
+	    2'b00:pp<={{6{r_pp[9]}},r_pp};
+	    2'b01:pp<={{4{r_pp[9]}},r_pp,{2{1'b0}}};
+	    2'b10:pp<={{2{r_pp[9]}},r_pp,{4{1'b0}}};
 	2'b11:pp<={r_pp,{6{1'b0}}};
     default:d<=0;
 	endcase	
